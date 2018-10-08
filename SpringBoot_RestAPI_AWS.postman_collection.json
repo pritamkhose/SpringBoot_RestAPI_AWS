@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SpringBoot_RestAPI_AWS",
+		"_postman_id": "3761871f-52d4-aa04-7eb1-1a6ff1f2e604",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/articles",
+			"request": {
+				"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/articles",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/article/2",
+			"request": {
+				"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/article/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/article",
+			"request": {
+				"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/article",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Android \",\n    \"category\": \"Mobility\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/article",
+			"request": {
+				"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/article",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"articleId\": 3,\n    \"title\": \"Hibernate SQL \",\n    \"category\": \"Hibernate\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/article/10",
+			"request": {
+				"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/article/10",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
