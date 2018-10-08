@@ -1,4 +1,4 @@
-SELECT * FROM sprinexamples.articles;
+SELECT * FROM pritam.articles;
 
 -- Dumping structure for table concretepage.articles
 CREATE TABLE IF NOT EXISTS `articles` (
