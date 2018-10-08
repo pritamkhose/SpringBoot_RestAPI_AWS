@@ -10,4 +10,5 @@ public interface IArticleService {
      boolean addArticle(Article article);
      void updateArticle(Article article);
      void deleteArticle(int articleId);
+     List<Article> getArticleBySearch(String search);
 }

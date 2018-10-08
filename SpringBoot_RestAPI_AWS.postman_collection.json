@@ -79,6 +79,17 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/articles/s",
+			"request": {
+				"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/articles/s",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }

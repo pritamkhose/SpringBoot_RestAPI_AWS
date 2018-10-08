@@ -1,6 +1,7 @@
 package com.concretepage.controller;
 import java.util.List;
 
+import org.hibernate.annotations.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -52,5 +53,11 @@ public class ArticleController {
 	public ResponseEntity<Void> deleteArticle(@PathVariable("id") Integer id) {
 		articleService.deleteArticle(id);
 		return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
-	}	
+	}
+	
+	@GetMapping("articles/{search}")
+	public ResponseEntity<List<Article>> getArticleBySearch(@PathVariable("search") String search) {
+		List<Article> list = articleService.getArticleBySearch(search);
+		return new ResponseEntity<List<Article>>(list, HttpStatus.OK);
+	}
 } 

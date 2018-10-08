@@ -8,5 +8,6 @@ public interface IArticleDAO {
     void updateArticle(Article article);
     void deleteArticle(int articleId);
     boolean articleExists(String title, String category);
+    List<Article> getArticleBySearch(String search);
 }
  

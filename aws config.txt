@@ -1,0 +1,119 @@
+All Applications  WorldApp  Worldapp-env  Environment ID: e-c24mygby5x, URL: Worldapp.ap-south-1.elasticbeanstalk.com 
+
+-----------------------------------
+
+Modify software
+
+Container Options
+The following settings control container behavior and let you pass key-value pairs in as OS environment variables. Learn more
+
+AWS X-Ray
+X-Ray daemon
+Enabled (Service charges may apply.)
+S3 log storage
+Configure the instances in your environment to upload rotated logs to Amazon S3. Learn more
+
+Rotate logs
+Enabled (Standard S3 charges apply.)
+Instance log streaming to CloudWatch Logs
+Configure the instances in your environment to stream logs to CloudWatch Logs. You can set the retention to up to ten years and configure Elastic Beanstalk to delete the logs when you terminate your environment.
+
+Log streaming
+Enabled (Standard CloudWatch charges apply.)
+Retention
+ days
+Lifecycle
+
+Environment properties
+The following properties are passed in the application as environment properties. Learn more
+
+
+GRADLE_HOME
+ 
+/usr/local/gradle
+ 
+
+JAVA_HOME
+ 
+/usr/lib/jvm/java
+ 
+
+M2
+ 
+/usr/local/apache-maven/bin
+ 
+
+M2_HOME
+ 
+/usr/local/apache-maven
+ 
+
+SERVER_PORT
+ 
+5000
+ 
+
+SPRING_DATASOURCE_PASSWORD
+ 
+pritam123
+ 
+
+SPRING_DATASOURCE_URL
+ 
+jdbc:mysql://aall94b14xyes5.ckk9jra6lp5q.ap-south-1.rds.amazonaws.com:3306/pritam
+ 
+
+SPRING_DATASOURCE_USERNAME
+ 
+pritam
+ 
+
+SPRING_JPA_DATABASE_PLATFORM
+ 
+org.hibernate.dialect.MySQL5Dialect
+ 
+
+SPRING_JPA_HIBERNATE_DDL_AUTO
+ 
+update
+ 
+
+-----------------------------------
+ 
+Modify database
+
+
+Endpoint
+aall94b14xyes5.ckk9jra6lp5q.ap-south-1.rds.amazonaws.com:3306 
+
+Database settings
+Choose an engine and instance type for your environment's database.
+
+Engine
+mysql
+
+Engine version
+--
+
+Instance class
+
+Storage
+
+5
+ GB
+Choose a number between 5 GB and 1024 GB.
+Username
+pritam
+
+Password
+
+•••••••••
+Retention
+
+When you terminate your environment, your database instance is also terminated. Choose Create snapshot to save a snapshot of the database prior to termination. Snapshots incur standard storage charges.
+Availability
+
+
+-----------------------------------
+
+

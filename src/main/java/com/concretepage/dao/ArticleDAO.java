@@ -45,4 +45,14 @@ public class ArticleDAO implements IArticleDAO {
 		              .setParameter(2, category).getResultList().size();
 		return count > 0 ? true : false;
 	}
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Article> getArticleBySearch(String search) {
+		if(search != null && search.length() > 0) {
+		String hql = "FROM Article as atcl where atcl.title LIKE '"+search+"%' or atcl.category LIKE '"+search+"%' ORDER BY articleId";  
+		return (List<Article>) entityManager.createQuery(hql).getResultList();
+		} else {
+		return getAllArticles() ;
+		}
+	}
 }
