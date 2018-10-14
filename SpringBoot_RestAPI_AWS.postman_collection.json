@@ -8,6 +8,84 @@
 	},
 	"item": [
 		{
+			"name": "city",
+			"description": "",
+			"item": [
+				{
+					"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/citys",
+					"request": {
+						"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/citys",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/city/10",
+					"request": {
+						"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/city/10",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/citys/pun",
+					"request": {
+						"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/citys/pun",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "country",
+			"description": "",
+			"item": [
+				{
+					"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/countrys",
+					"request": {
+						"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/countrys",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/countrys/ind",
+					"request": {
+						"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/countrys/ind",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/country/ind",
+					"request": {
+						"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/api/country/ind",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/articles",
 			"request": {
 				"url": "http://worldapp.ap-south-1.elasticbeanstalk.com/user/articles",
